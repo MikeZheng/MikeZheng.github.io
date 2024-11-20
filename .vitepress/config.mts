@@ -98,7 +98,7 @@ export default defineConfig({
 
     // 添加底部配置
     footer: {
-      copyright: '<a href="https://ipw.cn/ipv6webcheck/?site=www.zhengzhenfu.com" title="本站支持IPv6访问" target=\'_blank\'><img style=\'display:inline-block;vertical-align:middle\' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a><br/><a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022104972号</a>',
+      copyright: '<a href="https://ipw.cn/ipv6webcheck/?site=www.zhengzhenfu.com" title="本站支持IPv6访问" target=\'_blank\'><img style=\'display:inline-block;vertical-align:middle\' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a><a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022104972号</a>',
       message: '本站内容仅用于学习交流，请勿用于商业用途。'
     }
   }
