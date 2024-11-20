@@ -17,7 +17,7 @@ export default defineConfig({
         text: '后端', items: [
           // { text: 'Kafka', link: '/backend/kafka/kafka' },
           // { text: 'Redis', link: '/backend/redis/redis' },
-          { text: '帆软代理', link: '/middleware/finereport/finereport' }
+          { text: '帆软代理', link: '/middleware/finereport' }
         ]
       },
     ],
@@ -59,7 +59,7 @@ export default defineConfig({
         {
           text: '帆软分析',
           items: [
-            { text: '帆软简介', link: '/middleware/finereport/finereport' },
+            { text: '帆软简介', link: '/middleware/finereport/' },
             { text: '帆软登录', link: '/middleware/finereport/login' },
             { text: '帆软请求过程', link: '/middleware/finereport/view-report' },
             { text: '帆软请求分析', link: '/middleware/finereport/view-report-analyze' }
@@ -68,7 +68,8 @@ export default defineConfig({
         {
           text: '帆软代理',
           items: [
-            { text: '帆软代理', link: '/middleware/finereport/finereport-proxy' }
+            { text: '帆软代理需求', link: '/middleware/finereport-proxy/' },
+            { text: '帆软代理设计', link: '/middleware/finereport-proxy/finereport-proxy-design' },
           ]
         }
       ]
