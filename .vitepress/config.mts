@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from '../utils/auto-gen-sidebar.mjs'
+import { ImagePlugin } from './plugins/markdown/image'
 
 
 // https://vitepress.dev/reference/site-config
@@ -7,7 +8,13 @@ export default defineConfig({
   title: "1和0的回合",
   description: "1&0=0",
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
-
+  lastUpdated: true,
+  markdown: {
+    lineNumbers: true,
+    config: (md) => {
+      md.use(ImagePlugin) 
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -86,6 +93,12 @@ export default defineConfig({
       ],
       '/hardware/synology': [
         {
+          text: '群晖nas',
+          items: [
+            { text: '购买群晖', link: '/hardware/synology' }
+          ]
+        },
+        {
           text: '使用记录',
           items: [
             { text: '硬盘已损毁', link: '/hardware/synology/using/disk-broken' },
@@ -117,6 +130,15 @@ export default defineConfig({
     footer: {
       copyright: '<a href="https://ipw.cn/ipv6webcheck/?site=www.zhengzhenfu.com" title="本站支持IPv6访问" target=\'_blank\'><img style=\'display:inline-block;vertical-align:middle\' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a><a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022104972号</a>',
       message: '本站内容仅用于学习交流，请勿用于商业用途。'
+    },
+
+    
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
     }
   }
 })
