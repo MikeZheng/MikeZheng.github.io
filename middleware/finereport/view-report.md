@@ -10,6 +10,7 @@
 `http://domain/webroot/decision/view/report?viewlet=province/aa.cpt`
 
 在浏览器控制台，可以依次看到如下请求：
+
 ```java {.line-numbers}
 http://domain/webroot/decision/view/report?viewlet=province/aa.cpt
 http://domain/webroot/decision/view/report?op=emb&resource=xxx.css
@@ -26,9 +27,8 @@ http://domain/webroot/decision/v1/cloud/file?resource=xxxx.js
 http://domain/webroot/decision/file?path=xx/xx
 ```
 
-
-
 ### 2. 查询按钮
+
 ```java
 http://domain/webroot/decision/view/report?op=fr_dialog&cmd=parameters_d
 http://domain/webroot/decision/preview/info/collect
@@ -36,11 +36,13 @@ http://domain/webroot/decision/view/report?op=page_content
 ```
 
 ### 3. 下一页
+
 ```java
 http://domain/webroot/decision/view/report?op=page_content
 ```
 
 ### 4. 导出PDF
+
 ```java
 http://domain/webroot/decision/view/report?op=resource&resource=/com/fr/web/core/xxx
 http://domain/webroot/decision/view/report?op=export&cmd=check_register
