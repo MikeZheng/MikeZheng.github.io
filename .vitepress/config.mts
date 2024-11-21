@@ -20,6 +20,17 @@ export default defineConfig({
           { text: '帆软代理', link: '/middleware/finereport' }
         ]
       },
+      {
+        text: '硬件', items: [
+          { text: '群晖nas', link: '/hardware/synology' }
+        ]
+      },
+      {
+        text: '样例', items: [
+          { text: 'API Example', link: 'api-examples' },
+          { text: 'markdown Example', link: 'markdown-examples' },
+        ]
+      },
     ],
     // 添加logo配置
     logo: {
@@ -72,19 +83,24 @@ export default defineConfig({
             { text: '帆软代理设计', link: '/middleware/finereport-proxy/finereport-proxy-design' },
           ]
         }
+      ],
+      '/hardware/synology': [
+        {
+          text: '使用记录',
+          items: [
+            { text: '硬盘已损毁', link: '/hardware/synology/using/disk-broken' },
+            { text: '存储池容量过低', link: '/hardware/synology/using/low-storage-space' },
+            { text: 'DDNS注册失败', link: '/hardware/synology/using/ddns-wrong-password' },
+          ]
+        },
+        {
+          text: '维修记录',
+          items: [
+            { text: '主板故障', link: '/hardware/synology/fix/20241108' }
+          ]
+        }
       ]
     },
-    // sidebar: {
-    //   '/backend/redis': [
-    //     {
-    //       text: 'Redis',
-    //       items: [
-    //         { text: 'Redis', link: '/backend/redis/redis' },
-    //         { text: 'Redis1', link: '/backend/redis/redis1' }
-    //       ]
-    //     }
-    //   ]
-    // },
 
 
     socialLinks: [
