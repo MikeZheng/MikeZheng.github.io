@@ -33,6 +33,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '网络', items: [
+          { text: 'DNS', link: '/network/dns' },          
+          { text: 'markdown Example', link: 'markdown-examples' },
+        ]
+      },
+      {
         text: '样例', items: [
           { text: 'API Example', link: 'api-examples' },
           { text: 'markdown Example', link: 'markdown-examples' },
@@ -73,6 +79,20 @@ export default defineConfig({
       // "/frontend/react": set_sidebar("frontend/react"),
       // "/backend/redis": set_sidebar("backend/redis"),
       // "/backend/kafka": set_sidebar("backend/kafka"),
+      '/network/dns': [
+        {
+          text: '域名',
+          items: [
+            { text: '域名介绍', link: '/network/dns/domain' }
+          ]
+        },
+        {
+          text: 'DNS',
+          items: [
+            { text: 'DNS', link: '/network/dns/' }
+          ]
+        }
+      ],
       '/middleware/finereport': [
         {
           text: '帆软分析',
