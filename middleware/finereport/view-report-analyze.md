@@ -1,6 +1,5 @@
 # 分析请求
 
-
 ## 分析请求
 
 分析下不同帆软操作的几个常见请求
@@ -10,6 +9,7 @@
 ```java
 http://domain/webroot/decision/view/report?viewlet=province/aa.cpt
 ```
+
 返回html页面，页面内容会包含sessionID。
 根据观察，每次访问新的报表会关闭老的sessionID，同时创建新的sessionID，并关联当次报表访问，并在某些请求中传递该值
 
@@ -30,6 +30,7 @@ http://domain/webroot/decision/view/report?op=resource&resource=/com/fr/web/core
 该请求返回静态资源，不需要登录帆软就能访问，也不需要sessionID。和emb请求很相似，不同的是resource的地址是绝对路径，而不是emb请求的文件名称。
 
 ### 4. toolbar_icon请求
+
 ```java
 http://domain/webroot/decision/view/report?op=toolbar_icon&id=toolbar-image.png
 ```
@@ -60,6 +61,7 @@ fr_dialog请求需要登录，需要sessionID，cmd参数的值parameters_d未�
 ```
 
 ### 7. get_openVideo_settings请求
+
 ```java
 http://domain/webroot/decision/view/report?op=get_openVideo_settings
 ```
@@ -67,6 +69,7 @@ http://domain/webroot/decision/view/report?op=get_openVideo_settings
 应该是用来获取打开视频的设置，需要sessionID，目前遇到的响应都是为空。
 
 ### 8. closesessionid请求
+
 ```java
 http://domain/webroot/decision/view/report?op=closesessionid&sessionID=
 ```

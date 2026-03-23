@@ -34,14 +34,24 @@ export default defineConfig({
       },
       {
         text: '网络', items: [
-          { text: 'DNS', link: '/network/dns' },          
-          { text: 'markdown Example', link: 'markdown-examples' },
+          { text: 'DNS', link: '/network/dns' },        
         ]
       },
       {
-        text: '样例', items: [
-          { text: 'API Example', link: 'api-examples' },
-          { text: 'markdown Example', link: 'markdown-examples' },
+        text: '安全', items: [
+          { text: '证书', link: '/security/certification' },     
+          { text: 'OPENSSL', link: '/security/openssl' },
+        ]
+      },
+      {
+        text: '投资', items: [
+          { text: '日报', link: '/investment/daily-report' },
+          { text: '月报', link: 'markdown-examples' },
+        ]
+      },
+      {
+        text: '其他', items: [
+          { text: '自述', link: 'introduce-myself' }
         ]
       },
     ],
@@ -132,10 +142,25 @@ export default defineConfig({
             { text: '主板故障', link: '/hardware/synology/fix/20241108' }
           ]
         }
-      ]
+      ],
+      '/security/certification': [
+        {
+          text: '证书',
+          items: [
+            { text: 'SSL证书', link: '/security/certification/' },
+            { text: 'CA机构', link: '/security/certification/certification_authority' },
+          ]
+        }
+      ],
+      '/investment/daily-report': [
+        {
+          text: '202603',
+          items: [
+            { text: '20260323', link: '/investment/daily-report/20260323' }
+          ]
+        }
+      ],
     },
-
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MikeZheng' },
       {
@@ -148,7 +173,7 @@ export default defineConfig({
 
     // 添加底部配置
     footer: {
-      copyright: '<a href="https://ipw.cn/ipv6webcheck/?site=www.zhengzhenfu.com" title="本站支持IPv6访问" target=\'_blank\'><img style=\'display:inline-block;vertical-align:middle\' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a><a href="https://beian.miit.gov.cn/" target="_blank">您的备案号：</a><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022104972号</a> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030402005874" rel="noreferrer" target="_blank"> 粤公网安备44030402005874</a>',
+      copyright: '<a href="https://ipw.cn/ipv6webcheck/?site=www.zhengzhenfu.com" title="本站支持IPv6访问" target=\'_blank\'><img style=\'display:inline-block;vertical-align:middle\' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a>',
       message: '本站内容仅用于学习交流，请勿用于商业用途。'
     },
 
