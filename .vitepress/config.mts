@@ -45,8 +45,10 @@ export default defineConfig({
       },
       {
         text: '投资', items: [
+
           { text: '日报', link: '/investment/daily-report' },
           { text: '月报', link: 'markdown-examples' },
+          { text: '超级鹿鼎公', link: '/investment/超级鹿鼎公' },
         ]
       },
       {
@@ -157,6 +159,32 @@ export default defineConfig({
           text: '202603',
           items: [
             { text: '20260323', link: '/investment/daily-report/20260323' }
+          ]
+        }
+      ],
+      '/investment/超级鹿鼎公': [
+        {
+          text: '专栏',
+          items: [
+            { text: '成功的技术高手素描', link: '/investment/超级鹿鼎公/成功的技术高手素描' },
+            { text: '独孤九剑与易筋经', link: '/investment/超级鹿鼎公/独孤九剑与易筋经' },
+          ]
+        },
+        {
+          text: '短线案例',
+          items: [
+            { text: '短线指标', link: '/investment/超级鹿鼎公/短线指标' },
+            { text: '短线案例-20260402', link: '/investment/超级鹿鼎公/短线案例-20260402' },
+            { text: '2026年3月成交截图', link: '/investment/超级鹿鼎公/2026年3月成交截图' },
+          ]
+        },
+        {
+          text: '分析',
+          items: [
+            { text: '煤炭', link: '/investment/超级鹿鼎公/煤炭' },
+            { text: '三桶油', link: '/investment/超级鹿鼎公/三桶油' },
+            { text: '紫金矿业', link: '/investment/超级鹿鼎公/紫金矿业' },
+            { text: '右侧投资', link: '/investment/超级鹿鼎公/右侧投资' }
           ]
         }
       ],
