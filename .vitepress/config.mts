@@ -45,7 +45,8 @@ export default defineConfig({
       },
       {
         text: '投资', items: [
-
+          { text: '股票交易费用', link: '/investment/我的股票交易费用' },
+          { text: '网格交易', link: '/investment/网格交易' },
           { text: '日报', link: '/investment/daily-report' },
           { text: '月报', link: 'markdown-examples' },
           { text: '超级鹿鼎公', link: '/investment/超级鹿鼎公' },
@@ -151,6 +152,18 @@ export default defineConfig({
           items: [
             { text: 'SSL证书', link: '/security/certification/' },
             { text: 'CA机构', link: '/security/certification/certification_authority' },
+          ]
+        }
+      ],
+      '/investment/网格交易': [
+        {
+          text: '网格交易',
+          items: [
+            { text: '网格交易', link: '/investment/网格交易' },
+             { text: 'APP设置网格交易', link: '/investment/网格交易/券商APP设置网格交易' },
+            { text: '恒生科技', link: '/investment/网格交易/恒生科技' },
+            { text: '医疗器械ETF', link: '/investment/网格交易/医疗器械ETF' },
+
           ]
         }
       ],
