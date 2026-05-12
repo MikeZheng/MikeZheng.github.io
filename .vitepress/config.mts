@@ -45,6 +45,8 @@ export default defineConfig({
       },
       {
         text: '投资', items: [
+          { text: '股票交易费用', link: '/investment/我的股票交易费用' },
+          { text: '网格交易', link: '/investment/网格交易' },
           { text: '日报', link: '/investment/daily-report' },
           { text: '月报', link: 'markdown-examples' },
           { text: '超级鹿鼎公', link: '/investment/超级鹿鼎公' },
@@ -160,6 +162,15 @@ export default defineConfig({
           items: [
             { text: '煤炭分析', link: '/investment/collection/coal/index.md' },
             { text: '长协价', link: '/investment/collection/coal/changxiejia.md' },
+          ]}],
+      '/investment/网格交易': [
+        {
+          text: '网格交易',
+          items: [
+            { text: '网格交易', link: '/investment/网格交易' },
+             { text: 'APP设置网格交易', link: '/investment/网格交易/券商APP设置网格交易' },
+            { text: '恒生科技', link: '/investment/网格交易/恒生科技' },
+            { text: '医疗器械ETF', link: '/investment/网格交易/医疗器械ETF' },
           ]
         }
       ],
