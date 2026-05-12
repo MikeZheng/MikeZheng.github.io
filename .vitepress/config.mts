@@ -45,10 +45,10 @@ export default defineConfig({
       },
       {
         text: '投资', items: [
-
           { text: '日报', link: '/investment/daily-report' },
           { text: '月报', link: 'markdown-examples' },
           { text: '超级鹿鼎公', link: '/investment/超级鹿鼎公' },
+          { text: '煤炭', link: '/investment/collection/coal' },
         ]
       },
       {
@@ -151,6 +151,15 @@ export default defineConfig({
           items: [
             { text: 'SSL证书', link: '/security/certification/' },
             { text: 'CA机构', link: '/security/certification/certification_authority' },
+          ]
+        }
+      ],
+      '/investment/collection/coal': [
+        {
+          text: '煤炭',
+          items: [
+            { text: '煤炭分析', link: '/investment/collection/coal/index.md' },
+            { text: '长协价', link: '/investment/collection/coal/changxiejia.md' },
           ]
         }
       ],
